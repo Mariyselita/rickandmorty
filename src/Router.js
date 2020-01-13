@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import NavBar from './components/Navbar';
 import Episodios from './components/Episodios/Episodios';
@@ -8,7 +8,7 @@ import Error404 from "./components/Error404";
 
 export default () => {
     return (
-        <Router>
+        <HashRouter basename="/">
             <NavBar />
             <Switch>
                 <Route exact path="/" component={Home} />
@@ -16,6 +16,6 @@ export default () => {
                 <Route exact path="/Personajes" component={Personajes} />
                 <Route path="*" component={Error404} status={404} />
             </Switch>
-        </Router>
+        </HashRouter>
     );
 };

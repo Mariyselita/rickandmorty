@@ -102,11 +102,6 @@ export default function PermanentDrawerLeft() {
                             {data.episodes && data.episodes.map(item => (
                                 <Card className={classes.card}>
                                     <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image="/static/images/cards/contemplative-reptile.jpg"
-                                            title="Contemplative Reptile"
-                                        />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
                                                 {item.name}
@@ -116,14 +111,6 @@ export default function PermanentDrawerLeft() {
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            Share
-        </Button>
-                                        <Button size="small" color="primary">
-                                            Learn More
-        </Button>
-                                    </CardActions>
                                 </Card>
                             ))}
                         </Grid>
