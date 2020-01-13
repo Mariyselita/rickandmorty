@@ -67,6 +67,11 @@ export default function Personajes() {
                             {data.characters && data.characters.map(item => (
                                 <Card className={classes.card}>
                                     <CardActionArea>
+                                        <CardMedia
+                                            className={classes.media}
+                                            image={item.image}
+                                            title="Character"
+                                        />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
                                                 {item.name}
