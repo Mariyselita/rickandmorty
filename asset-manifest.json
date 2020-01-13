@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ryckandmorty/static/css/main.f615eeff.chunk.css",
+    "main.js": "/ryckandmorty/static/js/main.fd0a7392.chunk.js",
+    "main.js.map": "/ryckandmorty/static/js/main.fd0a7392.chunk.js.map",
+    "runtime-main.js": "/ryckandmorty/static/js/runtime-main.221ebd89.js",
+    "runtime-main.js.map": "/ryckandmorty/static/js/runtime-main.221ebd89.js.map",
+    "static/css/2.48d2f880.chunk.css": "/ryckandmorty/static/css/2.48d2f880.chunk.css",
+    "static/js/2.44700998.chunk.js": "/ryckandmorty/static/js/2.44700998.chunk.js",
+    "static/js/2.44700998.chunk.js.map": "/ryckandmorty/static/js/2.44700998.chunk.js.map",
+    "index.html": "/ryckandmorty/index.html",
+    "precache-manifest.50adc08d7200c47f99f56403264c2829.js": "/ryckandmorty/precache-manifest.50adc08d7200c47f99f56403264c2829.js",
+    "service-worker.js": "/ryckandmorty/service-worker.js",
+    "static/css/2.48d2f880.chunk.css.map": "/ryckandmorty/static/css/2.48d2f880.chunk.css.map",
+    "static/css/main.f615eeff.chunk.css.map": "/ryckandmorty/static/css/main.f615eeff.chunk.css.map",
+    "static/js/2.44700998.chunk.js.LICENSE": "/ryckandmorty/static/js/2.44700998.chunk.js.LICENSE",
+    "static/media/ep-3.jpg": "/ryckandmorty/static/media/ep-3.1b16577c.jpg",
+    "static/media/slick-theme.css": "/ryckandmorty/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.221ebd89.js",
+    "static/css/2.48d2f880.chunk.css",
+    "static/js/2.44700998.chunk.js",
+    "static/css/main.f615eeff.chunk.css",
+    "static/js/main.fd0a7392.chunk.js"
+  ]
+}
