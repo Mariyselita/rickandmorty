@@ -3,12 +3,12 @@ permalink: /index.html
 # Rick-morty-react-test
 
 
-Bienvenidos a este curioso repositorio, espero que le sea de ayuda o inspiración a la persona que lo llegue a encontrar.
+Bienvenidos a este curioso repositorio, espero que le sea de ayuda o inspiración a la persona que lo llegue a encontrar. 
 
 
 ---------------------
 
-## Contenidos
+### Contenidos
    
  * Introducción
  * Especificaciones
@@ -27,7 +27,7 @@ El objetivo de este proyecto es generar una web que muestre a detalle la descrip
 
 Esta a su vez, en caso de éxito máximo, logrará devolver una búsqueda por medio de filtros o directa de algún dato.
 
-En mi caso particular me gusta pensar creativamente, pero debido a razones de que hasta hace 5 horas empecé este proyecto :'V me di a la tarea de hacer un bosquejo rapidísimo para darme una idea del resultado final, el cual se va mostrar en el siguiente apartado de especificaciones.
+En mi caso particular me gusta pensar creativamente, pero debido a razones de que hasta hace  unas horas empecé este proyecto :'V me di a la tarea de hacer un bosquejo rapidísimo para darme una idea del resultado final, el cual se va mostrar en el siguiente apartado de especificaciones.
 
 
 
@@ -53,6 +53,50 @@ Como parte del proceso de entender los requerimientos, me di a la tarea de hacer
 
 
 
+
+# Módulos
+
+### `Archivo App.js`
+
+Archivo que se manda a llamar después de index.js
+
+### `Archivo Router.js `
+
+Aquí están las rutas del proyecto:
+
+- Navbar desplegado en toda la app
+- Router es HashRouter para que sirva en gh pages y no de error 404
+- Dentro de la etiqueta switch se declaran las rutas, hay 3 como tal y 1 por si no encuentra un módulo (404)
+
+
+### `Archivo Episodios.js y Personajes.js`
+
+Implementación de estados para obtener la data del server (la api de R&M) con el sig. código se obtiene la data:
+
+```javascript
+useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios(
+                'https://rickandmortyapi.com/api/episode',
+            );
+            setData(pre => ({
+                ...pre,
+                episodes: result.data.results || []
+            }));
+        };
+        fetchData();
+    }, []);
+
+```
+
+Y con esta sentencia el reader:
+
+`{data.episodes && data.episodes.map(…`
+
+Iteramos cada uno de los resultados, cuando este devuelve una respuesta devolvería un arreglo llamado results, ahí están almacenados los episodios/personajes.
+
+**Sobre Home, ya me daré tiempo de llenar el carousel.
+**Sobre las vistas, faltó hacer paginación.
 
 ---------------------
 

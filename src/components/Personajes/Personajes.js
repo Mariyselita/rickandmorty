@@ -8,8 +8,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 
-
-
 const drawerWidth = 200;
 
 const useStyles = makeStyles(theme => ({
@@ -64,7 +62,7 @@ export default function Personajes() {
                 <div className={classes.root}>
                     <React.Fragment>
                         <Grid item xs={12}>
-                            {data.characters && data.characters.map(item => (
+                            {data.characters && data.characters.map(item => ( //the same con episodios
                                 <Card className={classes.card}>
                                     <CardActionArea>
                                         <CardMedia

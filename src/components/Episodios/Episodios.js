@@ -12,10 +12,7 @@ import PeopleIcon from '@material-ui/icons/People';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 
@@ -42,7 +39,7 @@ const useStyles = makeStyles(theme => ({
     content: {
         flexGrow: 1,
         backgroundColor: theme.palette.background.default,
-        padding: theme.spacing(3),
+        padding: theme.spacing(9),
     },
 }));
 
@@ -97,9 +94,10 @@ export default function PermanentDrawerLeft() {
                 <h1>Episodios</h1>
                 <div className={classes.toolbar} />
                 <div className={classes.root}>
-                    <React.Fragment>
-                        <Grid item xs={4}>
-                            {data.episodes && data.episodes.map(item => (
+                    <React.Fragment >
+                        
+                        <Grid item xs={12} >
+                            {data.episodes && data.episodes.map(item => ( // así porque data no tiene nada y se valida primero y despues de ciertos milisegundos data tiene algo y despues se procede con el .map
                                 <Card className={classes.card}>
                                     <CardActionArea>
                                         <CardContent>
